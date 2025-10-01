@@ -18,7 +18,7 @@ public class LongestSubArrayWithKSum {
                 int len = i - map.get(rem);
                 res = Math.max(res,len);
             }
-            if(!map.containsKey(rem)) map.put(rem, i);
+            if(!map.containsKey(sum)) map.put(sum, i);
         }
         System.out.println(res);
     }  
